@@ -16,16 +16,20 @@ public class UserEntity {
     @Column("PASSWORD")
     private String password;
 
+    @Column("EMAIL")
+    private String email;
+
     @Column("ROLE")
     private Role role;
 
     @Column("ENABLED")
     private boolean enabled;
 
-    public UserEntity(int id, String username, String password, Role role, boolean enabled) {
+    public UserEntity(int id, String username, String password, String email, Role role, boolean enabled) {
         this.id = id;
         this.username = username;
         this.password = password;
+        this.email = email;
         this.role = role;
         this.enabled = enabled;
     }
@@ -55,6 +59,14 @@ public class UserEntity {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public Role getRole() {
