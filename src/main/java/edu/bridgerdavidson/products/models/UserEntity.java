@@ -30,6 +30,9 @@ public class UserEntity {
         this.enabled = enabled;
     }
 
+    public UserEntity() {
+    }
+
     public int getId() {
         return id;
     }
