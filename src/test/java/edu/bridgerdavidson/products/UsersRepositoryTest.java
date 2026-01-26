@@ -22,7 +22,7 @@ class UsersRepositoryTest {
         UserEntity u = new UserEntity();
         u.setUsername("testuser");
         u.setPassword("hashed");
-        u.setRole(Role.CUSTOMER);
+        u.setRole(Role.customer);
         u.setEnabled(true);
 
         usersRepository.save(u);
