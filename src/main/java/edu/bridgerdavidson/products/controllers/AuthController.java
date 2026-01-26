@@ -22,6 +22,11 @@ public class AuthController {
     public UsersRepository usersRepository;
     public PasswordEncoder passwordEncoder;
 
+    public AuthController(UsersRepository usersRepository, PasswordEncoder passwordEncoder) {
+        this.usersRepository = usersRepository;
+        this.passwordEncoder = passwordEncoder;
+    }
+
     @GetMapping("/login")
     public String login(Model model) {
         model.addAttribute("title", "Login");
