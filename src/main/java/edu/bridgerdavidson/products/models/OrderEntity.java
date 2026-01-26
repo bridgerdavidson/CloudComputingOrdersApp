@@ -9,6 +9,7 @@ public class OrderEntity {
     @Id
     @Column("ID")
     private int id;
+
     @Column("ORDER_NUMBER")
     private String order_number;
 

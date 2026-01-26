@@ -31,7 +31,6 @@ public class OrdersDataService implements DataAccessInterface<OrderModel> {
             return null;
         }
         return Mapper.toModel(orderEntity);
-
     }
     @Override
     public Iterable<OrderModel> getAll() {
