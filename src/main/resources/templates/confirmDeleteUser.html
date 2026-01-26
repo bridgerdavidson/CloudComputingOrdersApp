@@ -62,6 +62,9 @@
 <nav>
     <a th:href="@{/admin/orders}">All Orders</a>
     <a th:href="@{/admin/users}">User Admin</a>
+    <form th:action="@{/logout}" method="post" class="logout">
+        <button type="submit">Logout</button>
+    </form>
 </nav>
 
 <div class="container">
